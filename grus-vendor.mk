@@ -1293,8 +1293,6 @@ PRODUCT_PACKAGES += \
     imssettings \
     uceShimService \
     CNEService \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
     WfdService \
     dpmserviceapp \
     ims \
