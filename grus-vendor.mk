@@ -1302,7 +1302,5 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     PowerOffAlarm \
     TimeService \
-    QPerformance \
-    UxPerformance \
     WfdCommon \
     chargeonlymode
