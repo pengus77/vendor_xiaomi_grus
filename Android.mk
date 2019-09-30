@@ -19,6 +19,18 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),grus)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libtinycompress_vendor
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtinycompress_vendor.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtinycompress_vendor.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libqti-iopd-client_system
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqti-iopd-client_system.so
