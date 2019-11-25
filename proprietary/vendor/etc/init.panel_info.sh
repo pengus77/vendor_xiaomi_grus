@@ -26,13 +26,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-# Update the panel color property and Leds brightness 
+# Update the panel color property and Leds brightness
 for i in $(seq 5); do
-    if [ -f /sys/bus/i2c/devices/2-0049/panel_color ]; then
+    if [ -f /sys/bus/i2c/devices/3-0049/panel_color ]; then
 	# St
-	color=`cat /sys/bus/i2c/devices/2-0049/panel_color`
+	color=`cat /sys/bus/i2c/devices/3-0049/panel_color`
 	if [ -n "$color" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 2-0049 $color
+	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 3-0049 $color
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
@@ -40,10 +40,10 @@ for i in $(seq 5); do
 	    continue
 	fi
 	#Synaptics
-    elif [ -f /sys/bus/i2c/devices/2-0020/panel_color ]; then
-	color=`cat /sys/bus/i2c/devices/2-0020/panel_color`
+    elif [ -f /sys/bus/i2c/devices/3-0020/panel_color ]; then
+	color=`cat /sys/bus/i2c/devices/3-0020/panel_color`
 	if [ -n "$color" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 2-0020 $color
+	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 3-0020 $color
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
@@ -51,43 +51,10 @@ for i in $(seq 5); do
 	    continue
 	fi
 	#Focal
-    elif [ -f /sys/bus/i2c/devices/2-0038/panel_color ]; then
-	color=`cat /sys/bus/i2c/devices/2-0038/panel_color`
+    elif [ -f /sys/bus/i2c/devices/3-0038/panel_color ]; then
+	color=`cat /sys/bus/i2c/devices/3-0038/panel_color`
 	if [ -n "$color" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 2-0038 $color
-	    break
-	else
-	    /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
-	    sleep 1
-	    continue
-	fi
-	#Novatek
-    elif [ -f /sys/bus/i2c/devices/2-0062/panel_color ]; then
-        color=`cat /sys/bus/i2c/devices/2-0062/panel_color`
-        if [ -n "$color" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 2-0062 $color
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Goodix
-    elif [ -f /sys/bus/i2c/devices/3-005d/panel_color ]; then
-        color=`cat /sys/bus/i2c/devices/3-005d/panel_color`
-        if [ -n "$color" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 3-005d $color
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Solomon
-	elif [ -f /sys/bus/i2c/devices/2-004a/panel_color ]; then
-	color=`cat /sys/bus/i2c/devices/2-004a/panel_color`
-	if [ -n "$color" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 2-004a $color
+	    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from 3-0038 $color
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
@@ -102,11 +69,11 @@ for i in $(seq 5); do
 done
 
 for i in $(seq 5); do
-    if [ -f /sys/bus/i2c/devices/2-0049/panel_vendor ]; then
+    if [ -f /sys/bus/i2c/devices/3-0049/panel_vendor ]; then
 	# St
-	panel_vendor=`cat /sys/bus/i2c/devices/2-0049/panel_vendor`
+	panel_vendor=`cat /sys/bus/i2c/devices/3-0049/panel_vendor`
 	if [ -n "$panel_vendor" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 2-0049 $panel_vendor
+	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 3-0049 $panel_vendor
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
@@ -114,10 +81,10 @@ for i in $(seq 5); do
 	    continue
 	fi
 	#Synaptics
-    elif [ -f /sys/bus/i2c/devices/2-0020/panel_vendor ]; then
-	panel_vendor=`cat /sys/bus/i2c/devices/2-0020/panel_vendor`
+    elif [ -f /sys/bus/i2c/devices/3-0020/panel_vendor ]; then
+	panel_vendor=`cat /sys/bus/i2c/devices/3-0020/panel_vendor`
 	if [ -n "$panel_vendor" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 2-0020 $panel_vendor
+	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 3-0020 $panel_vendor
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
@@ -125,46 +92,13 @@ for i in $(seq 5); do
 	    continue
 	fi
 	#Focal
-    elif [ -f /sys/bus/i2c/devices/2-0038/panel_vendor ]; then
-	panel_vendor=`cat /sys/bus/i2c/devices/2-0038/panel_vendor`
+    elif [ -f /sys/bus/i2c/devices/3-0038/panel_vendor ]; then
+	panel_vendor=`cat /sys/bus/i2c/devices/3-0038/panel_vendor`
 	if [ -n "$panel_vendor" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 2-0038 $panel_vendor
+	    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 3-0038 $panel_vendor
 	    break
 	else
 	    /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
-	    sleep 1
-	    continue
-	fi
-	#Novatek
-    elif [ -f /sys/bus/i2c/devices/2-0062/panel_vendor ]; then
-        panel_vendor=`cat /sys/bus/i2c/devices/2-0062/panel_vendor`
-        if [ -n "$panel_vendor" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 2-0062 $panel_vendor
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Goodix
-    elif [ -f /sys/bus/i2c/devices/3-005d/panel_vendor ]; then
-        panel_vendor=`cat /sys/bus/i2c/devices/3-005d/panel_vendor`
-        if [ -n "$panel_vendor" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 3-005d $panel_vendor
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Solomon
-	elif [ -f /sys/bus/i2c/devices/2-004a/panel_vendor ]; then
-	    panel_vendor=`cat /sys/bus/i2c/devices/2-004a/panel_vendor`
-	    if [ -n "$panel_vendor" ]; then
-	        /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from 2-004a $panel_vendor
-	        break
-	    else
-	        /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
 	    sleep 1
 	    continue
 	fi
@@ -174,79 +108,22 @@ for i in $(seq 5); do
 	sleep 1
     fi
 done
-
 for i in $(seq 5); do
-    if [ -f /sys/bus/i2c/devices/2-0049/panel_display ]; then
-	# St
-	panel_display=`cat /sys/bus/i2c/devices/2-0049/panel_display`
-	if [ -n "$panel_display" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 2-0049 $panel_display
-	    break
+        if [ -f /sys/class/touch/touch_dev/touch_vendor ]; then
+		touch_vendor=`cat /sys/class/touch/touch_dev/touch_vendor`
+		if [ -n "$touch_vendor" ]; then
+			/system/bin/log -p i -t panel-info-sh Get touch_vendor successfully from $touch_vendor
+			break;
+		else
+			/system/bin/log -p i -t panel-info-sh Get touch_vendor unsuccessfully, try again...
+		        sleep 1
+			continue
+		fi
 	else
-	    /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-	    sleep 1
-	    continue
+		touch_vendor="0"
+		/system/bin/log -p i -t panel-info-sh Get touch_vendor unsuccessfully, try again...
+		sleep 1
 	fi
-	#Synaptics
-    elif [ -f /sys/bus/i2c/devices/2-0020/panel_display ]; then
-	panel_display=`cat /sys/bus/i2c/devices/2-0020/panel_display`
-	if [ -n "$panel_display" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 2-0020 $panel_display
-	    break
-	else
-	    /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-	    sleep 1
-	    continue
-	fi
-	#Focal
-    elif [ -f /sys/bus/i2c/devices/2-0038/panel_display ]; then
-	panel_display=`cat /sys/bus/i2c/devices/2-0038/panel_display`
-	if [ -n "$panel_display" ]; then
-	    /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 2-0038 $panel_display
-	    break
-	else
-	    /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-	    sleep 1
-	    continue
-	fi
-	#Novatek
-    elif [ -f /sys/bus/i2c/devices/2-0062/panel_display ]; then
-        panel_display=`cat /sys/bus/i2c/devices/2-0062/panel_display`
-        if [ -n "$panel_display" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 2-0062 $panel_display
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Goodix
-    elif [ -f /sys/bus/i2c/devices/3-005d/panel_display ]; then
-        panel_display=`cat /sys/bus/i2c/devices/3-005d/panel_display`
-        if [ -n "$panel_display" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 3-005d $panel_display
-            break
-        else
-            /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-            sleep 1
-            continue
-    fi
-	#Solomon
-	elif [ -f /sys/bus/i2c/devices/2-004a/panel_display ]; then
-	    panel_display=`cat /sys/bus/i2c/devices/2-004a/panel_display`
-	    if [ -n "$panel_display" ]; then
-	        /system/bin/log -p i -t panel-info-sh Get panel_display successfully from 2-004a $panel_display
-	        break
-	    else
-	        /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-	    sleep 1
-	    continue
-	fi
-    else
-	panel_display=""
-	/system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
-	sleep 1
-    fi
 done
 
 case "$color" in
@@ -361,38 +238,20 @@ case "$panel_vendor" in
         setprop sys.panel.vendor UNKNOWN
         ;;
 esac
-case "$panel_display" in
+case "$touch_vendor" in
     "1")
-        setprop sys.panel.display JDI
+        setprop sys.panel.touch_vendor 1
         ;;
     "2")
-        setprop sys.panel.display LGD
+        setprop sys.panel.touch_vendor 2
         ;;
     "3")
-        setprop sys.panel.display SHARP
+        setprop sys.panel.touch_vendor 3
         ;;
     "4")
-        setprop sys.panel.display AUO
-        ;;
-    "5")
-        setprop sys.panel.display BOE
-        ;;
-    "6")
-        setprop sys.panel.display TIANMA
-        ;;
-    "7")
-        setprop sys.panel.display EBBG
-        ;;
-    "8")
-        setprop sys.panel.display SDC
-        ;;
-    "9")
-        setprop sys.panel.display EDO
-		;;
-    "0")
-        setprop sys.panel.display OFILM
+        setprop sys.panel.touch_vendor 4
         ;;
     *)
-        setprop sys.panel.display UNKNOWN
+        setprop sys.panel.touch_vendor UNKNOWN
         ;;
 esac

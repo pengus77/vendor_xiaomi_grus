@@ -2,7 +2,7 @@
 <root>
     <color>
         <NodeTree>
-            <NodeName>lcm cta unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb</NodeName>
+            <NodeName>lcm cta unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight</NodeName>
         </NodeTree>
         <lcm>
             <lcmParamName>lcm_num lcm_array</lcmParamName>
@@ -45,13 +45,16 @@
             <minCCT>4250</minCCT>
         </eyeCare>
         <hbm>
-            <hbmParamName>hbmTrigerLux hbmExitThreshold hbmKeepOnMaxTime hbmRestTime maxBL closeDelay</hbmParamName>
+            <hbmParamName>hbmTrigerLux hbmExitThreshold hbmKeepOnMaxTime hbmRestTime maxBL closeDelay foolProofLux foolProofOpenDelay foolProofThreshold</hbmParamName>
             <hbmTrigerLux>8000</hbmTrigerLux>
             <hbmExitThreshold>5000</hbmExitThreshold>
             <hbmKeepOnMaxTime>1800</hbmKeepOnMaxTime>
             <hbmRestTime>600</hbmRestTime>
             <maxBL>2047</maxBL>
             <closeDelay>3</closeDelay>
+            <foolProofLux>12000</foolProofLux>
+            <foolProofOpenDelay>5</foolProofOpenDelay>
+            <foolProofThreshold>500</foolProofThreshold>
         </hbm>
         <ccbb>
             <ccbbParamName>xCoeff yCoeff blThreshold deltaX deltaY</ccbbParamName>
@@ -128,5 +131,19 @@
             <pccGABBParams8>5.73E-26 -5.101E-22 1.884E-18 -3.725E-15 4.232E-12 -2.748E-9 9.586E-7 -1.795E-4 1.036</pccGABBParams8>
             <PccGABBThreshold>1700</PccGABBThreshold>
         </gabb>
+        <dcBacklight>
+            <dcBacklightParamName>minBL DCBLThreshold DCBLStartPcc DCBLStep DCBLCoeff0 DCBLCoeff1 DcCmd0 DcCmd1 DcCmd2 DcCmd3 DcCmd4</dcBacklightParamName>
+            <minBL>5</minBL>
+            <DCBLThreshold>610</DCBLThreshold>
+            <DCBLStartPcc>0.022</DCBLStartPcc>
+            <DCBLStep>0.002</DCBLStep>
+            <DCBLCoeff0>2.40783</DCBLCoeff0>
+            <DCBLCoeff1>3.99585</DCBLCoeff1>
+            <DcCmd0>00 00 39 00 00 00 00 00 02 81 91</DcCmd0>
+            <DcCmd1>00 00 39 00 00 00 00 00 03 F0 5A 5A</DcCmd1>
+            <DcCmd2>00 00 39 00 00 00 00 00 02 B1 00</DcCmd2>
+            <DcCmd3>00 00 39 00 00 00 00 00 02 B0 16</DcCmd3>
+            <DcCmd4>00 00 39 01 00 00 00 00 03 F0 A5 A5</DcCmd4>
+        </dcBacklight>
     </color>
 </root>
