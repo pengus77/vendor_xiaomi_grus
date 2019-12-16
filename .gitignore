@@ -1,0 +1,3 @@
+proprietary/check_files.sh
+proprietary/upgrade_system.sh
+proprietary/vendor/upgrade_vendor.sh
