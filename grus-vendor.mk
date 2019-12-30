@@ -18,7 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/grus
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/grus/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/xiaomi/grus/proprietary/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM)/bin/dpmd \
     vendor/xiaomi/grus/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/xiaomi/grus/proprietary/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/dpm/dpm.conf \
