@@ -41,6 +41,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/xiaomi/grus/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
     vendor/xiaomi/grus/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
+    vendor/xiaomi/grus/proprietary/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar \
+    vendor/xiaomi/grus/proprietary/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar \
     vendor/xiaomi/grus/proprietary/framework/QPerformance.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/QPerformance.jar \
     vendor/xiaomi/grus/proprietary/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/grus/proprietary/framework/UxPerformance.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/UxPerformance.jar \
@@ -77,7 +79,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/xiaomi/grus/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
     vendor/xiaomi/grus/proprietary/framework/vendor.qti.latency-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.latency-V2.0-java.jar \
-    vendor/xiaomi/grus/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.api@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.api@1.1.so \
+    vendor/xiaomi/grus/proprietary/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/xiaomi/grus/proprietary/lib/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.constants@2.1.so \
+    vendor/xiaomi/grus/proprietary/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
     vendor/xiaomi/grus/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/grus/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/grus/proprietary/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imscmservice@2.0.so \
@@ -136,6 +145,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/xiaomi/grus/proprietary/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.imsrtpservice@2.0.so \
     vendor/xiaomi/grus/proprietary/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.imsrtpservice@2.1.so \
+    vendor/xiaomi/grus/proprietary/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.api@1.1.so \
+    vendor/xiaomi/grus/proprietary/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/xiaomi/grus/proprietary/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.constants@2.1.so \
+    vendor/xiaomi/grus/proprietary/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/xiaomi/grus/proprietary/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
     vendor/xiaomi/grus/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/grus/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/grus/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
