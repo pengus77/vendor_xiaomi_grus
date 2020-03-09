@@ -45,16 +45,13 @@
             <minCCT>4250</minCCT>
         </eyeCare>
         <hbm>
-            <hbmParamName>hbmTrigerLux hbmExitThreshold hbmKeepOnMaxTime hbmRestTime maxBL closeDelay foolProofLux foolProofOpenDelay foolProofThreshold</hbmParamName>
+            <hbmParamName>hbmTrigerLux hbmExitThreshold hbmKeepOnMaxTime hbmRestTime maxBL closeDelay</hbmParamName>
             <hbmTrigerLux>8000</hbmTrigerLux>
             <hbmExitThreshold>5000</hbmExitThreshold>
             <hbmKeepOnMaxTime>1800</hbmKeepOnMaxTime>
             <hbmRestTime>600</hbmRestTime>
             <maxBL>2047</maxBL>
             <closeDelay>3</closeDelay>
-            <foolProofLux>12000</foolProofLux>
-            <foolProofOpenDelay>5</foolProofOpenDelay>
-            <foolProofThreshold>500</foolProofThreshold>
         </hbm>
         <ccbb>
             <ccbbParamName>xCoeff yCoeff blThreshold deltaX deltaY</ccbbParamName>
