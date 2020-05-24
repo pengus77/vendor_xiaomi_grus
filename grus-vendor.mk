@@ -479,11 +479,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/xiaomi/grus/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/grus/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/xiaomi/grus/proprietary/vendor/etc/spk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk.wav \
-    vendor/xiaomi/grus/proprietary/vendor/etc/spk_cal_pinknoise.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_pinknoise.wav \
-    vendor/xiaomi/grus/proprietary/vendor/etc/spk_cal_silence.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_silence.wav \
-    vendor/xiaomi/grus/proprietary/vendor/etc/spk_cal_sweep.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_sweep.wav \
-    vendor/xiaomi/grus/proprietary/vendor/etc/spk_cal_whitenoise.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_whitenoise.wav \
     vendor/xiaomi/grus/proprietary/vendor/etc/thermal-engine-sdm710-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm710-camera.conf \
     vendor/xiaomi/grus/proprietary/vendor/etc/thermal-engine-sdm710-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm710-high.conf \
     vendor/xiaomi/grus/proprietary/vendor/etc/thermal-engine-sdm710-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm710-map.conf \
