@@ -19,6 +19,57 @@
 soong_namespace {
 }
 
+cc_prebuilt_binary {
+	name: "chargeonlymode",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: [
+				"proprietary/bin/chargeonlymode",
+			]
+		}
+	},
+	soc_specific: true,
+	check_elf_files: false
+}
+
+cc_prebuilt_binary {
+	name: "dpmd",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: [
+				"proprietary/bin/dpmd",
+			]
+		}
+	},
+	soc_specific: true,
+	check_elf_files: false
+}
+
+cc_prebuilt_binary {
+	name: "wfdservice",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: [
+				"proprietary/bin/wfdservice",
+			]
+		}
+	},
+	soc_specific: true,
+	check_elf_files: false
+}
+
 cc_prebuilt_library_shared {
 	name: "liblbs_core",
 	owner: "xiaomi",
@@ -36,6 +87,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false
 }
 
 cc_prebuilt_library_shared {
@@ -55,6 +107,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false
 }
 
 cc_prebuilt_library_shared {
@@ -74,6 +127,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false
 }
 
 cc_prebuilt_library_shared {
@@ -93,6 +147,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false
 }
 
 cc_prebuilt_library_shared {
@@ -112,6 +167,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false
 }
 
 android_app_import {
