@@ -3,7 +3,7 @@
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
-service wfdservice /system/product/bin/wfdservice
+service wfdservice /system/bin/wfdservice
     class main
     user system
     disabled
