@@ -1390,7 +1390,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
-    libplatformconfig \
     libsdm-disp-vndapis \
     libthermalclient \
     com.qualcomm.qti.bluetooth_audio@1.0 \
